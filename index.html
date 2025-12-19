@@ -14,8 +14,8 @@
     <!-- Responsive navbar  -->
     <nav class="bg-green-100 p-3 flex item-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden ">
+        <svg id="menu_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -33,6 +33,29 @@
         </ul>
 
     </nav>
+
+    <!-- side navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="close_nav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-gray-600 text-center">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black " href="./contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </section>
+
+
+
     <!-- header section -->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center gap-10">
         <div>
@@ -96,29 +119,33 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Best seller -->
 
     <section class="p-4 text-center">
-        <h1 class="font-bold mt-5 text-3xl"> Best Seller</h1> 
+        <h1 class="font-bold mt-5 text-3xl"> Best Seller</h1>
         <div class="grid grid-cols-2  md:grid-cols-4 mt-5 gap-5">
             <div>
-                <img src="./images/bestseller_1.png" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg" alt="plant images">
+                <img src="./images/bestseller_1.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg" alt="plant images">
                 <h1>Rose plant</h1>
                 <p>$30</p>
             </div>
             <div>
-                <img src="./images/bestseller_2.png" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg"alt="plant images">
+                <img src="./images/bestseller_2.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg" alt="plant images">
                 <h1>Snake Plant</h1>
                 <p>$50</p>
             </div>
             <div>
-                <img src="./images/bestseller_3.png" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg" alt="plant images">
+                <img src="./images/bestseller_3.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg" alt="plant images">
                 <h1>dumb cane plant</h1>
                 <p>$99</p>
             </div>
             <div>
-                <img src="./images/bestseller_4.png" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg" alt="plant images">
+                <img src="./images/bestseller_4.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg" alt="plant images">
                 <h1> Hydrangea plant</h1>
                 <p>$50</p>
             </div>
@@ -126,41 +153,49 @@
     </section>
 
     <!-- Customer reviews -->
-     <section>
+    <section>
         <h1 class="text-3xl font-bold mt-5 text-center">Customer reviews</h1>
         <div class="flex flex-col gap-5 text-white m-5">
             <div class="bg-green-900 p-5 container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus aut laboriosam veritatis? Facilis illum laboriosam accusamus, aliquid corporis voluptatum qui, aperiam reprehenderit nihil, laborum natus obcaecati distinctio excepturi aut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus aut laboriosam veritatis?
+                    Facilis illum laboriosam accusamus, aliquid corporis voluptatum qui, aperiam reprehenderit nihil,
+                    laborum natus obcaecati distinctio excepturi aut!</p>
                 <p class="font-bold text-yellow-300">Michael</p>
             </div>
             <div class="bg-green-900 p-5 container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus aut laboriosam veritatis? Facilis illum laboriosam accusamus, aliquid corporis voluptatum qui, aperiam reprehenderit nihil, laborum natus obcaecati distinctio excepturi aut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus aut laboriosam veritatis?
+                    Facilis illum laboriosam accusamus, aliquid corporis voluptatum qui, aperiam reprehenderit nihil,
+                    laborum natus obcaecati distinctio excepturi aut!</p>
                 <p class="font-bold text-yellow-300">David</p>
             </div>
             <div class="bg-green-900 p-5 container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus aut laboriosam veritatis? Facilis illum laboriosam accusamus, aliquid corporis voluptatum qui, aperiam reprehenderit nihil, laborum natus obcaecati distinctio excepturi aut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus aut laboriosam veritatis?
+                    Facilis illum laboriosam accusamus, aliquid corporis voluptatum qui, aperiam reprehenderit nihil,
+                    laborum natus obcaecati distinctio excepturi aut!</p>
                 <p class="font-bold text-yellow-300">Omar</p>
             </div>
 
         </div>
-     </section>
-     <!-- News letter -->
-      <section class="text-center">
+    </section>
+    <!-- News letter -->
+    <section class="text-center">
         <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
         <p>Signup for our mail newspaper to get exclusive discounts,Updates,and more</p>
         <input type="text" placeholder="Enter your email address" class="border border-black p-2 m-3" style="width:80%">
         <br>
         <button class="bg-black text-white p-3 m-1 underline rounded-lg">Subscribe</button>
 
-      </section>
-      <!-- footer -->
-       <section class="bg-green-100 p-10 flex flex-col gap-5">
+    </section>
+    <!-- footer -->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
         <h1 class="text-4xl font-bold">Greenden</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nisi perspiciatis inventore itaque maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nisi perspiciatis inventore itaque maxime?
+        </p>
         <p>@ 2025 Greenden.com</p>
-       </section>
+    </section>
 
 
+    <script src="index.js"></script>
 </body>
 
 </html>
